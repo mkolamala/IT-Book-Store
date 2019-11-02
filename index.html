@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- css references start -->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/site.css">
+<!-- css references end -->
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+
+        <a class="navbar-brand" href="#">
+            <img src="index.html" width="30" height="30" class="d-inline-block align-top" alt="">
+            <i class="fas fa-book"></i> IT Book Store
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Browse
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Programming</a>
+                        <a class="dropdown-item" href="#">Database</a>
+                        <div class="dropdown-item">Cloud Technology</div>
+                        <a class="dropdown-item" href="#">Web Services</a>
+                        <a class="dropdown-item" href="#">Software Design</a>
+                    </div>
+                </li>
+
+            </ul>
+            <button type="button" class="btn  mr-sm-4">
+                <i class="fas fa-shopping-cart"></i> <span class="badge badge-light">9</span>
+                <span class="sr-only">unread messages</span>
+            </button>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <span class="navbar-text ml-auto">
+                <a data-toggle="modal" data-target="#loginModal">
+                    <i class="fas fa-sign-in-alt"></i> Login</a>
+            </span>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- login Modal start -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login </h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login Modal End -->
+
+    <!-- Carusel start -->
+    <div class="container mt-3" style="background-color:linen;">
+        <div class="">
+            <div class="col-12">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card" style="max-width: 18rem;">
+                            <img style="height:20rem" src="img/Programming/csharp.jpg" class="card-img-top" alt="Out of control">
+                            <div class="card-body">
+                                <h5 class="card-title">C# 7</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="max-width: 18rem;">
+                            <img style="height:20rem" src="img/Programming/CMachineLearning.jpg" class="card-img-top" alt="The God Delusion">
+                            <div class="card-body">
+                                <h5 class="card-title d-inline-block text-truncate" style="max-width: 175px;">C# Machine Learning</h5>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="max-width: 18rem;">
+                            <img style="height:20rem;" src="img/Programming/CsharpProgramming.jpg" class="card-img-top" alt="The History of Love">
+                            <div class="card-body">
+                                <h5 class="card-title text-nowrap">The History of Love</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="max-width: 18rem;">
+                            <img style="height:20rem;" src="img/Programming/CDesignPatterns.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Design Patterns</h5>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img style="height:20rem;" src="img/Programming/Java-in-a-Nutshell.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Java</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+<br>
+<br>
+    <!-- Carousel Start -->
+    <div class="card-deck">
+        <div class="card">
+            <img src="img/Out of control.jpg" class="card-img-top" alt="1">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/The God Delusion.jpg" class="card-img-top" alt="2">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/The History of Love.jpg" class="card-img-top" alt="3">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- JS Files start -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="js/site.js"></script>
+    <!-- JS Files end -->
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- css references start -->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/site.css">
+<!-- css references end -->
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+
+        <a class="navbar-brand" href="#">
+            <img src="index.html" width="30" height="30" class="d-inline-block align-top" alt="">
+            <i class="fas fa-book"></i> IT Book Store
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Browse
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Programming</a>
+                        <a class="dropdown-item" href="#">Database</a>
+                        <div class="dropdown-item">Cloud Technology</div>
+                        <a class="dropdown-item" href="#">Web Services</a>
+                        <a class="dropdown-item" href="#">Software Design</a>
+                    </div>
+                </li>
+
+            </ul>
+            <button type="button" class="btn  mr-sm-4">
+                <i class="fas fa-shopping-cart"></i> <span class="badge badge-light">9</span>
+                <span class="sr-only">unread messages</span>
+            </button>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <span class="navbar-text ml-auto">
+                <a data-toggle="modal" data-target="#loginModal">
+                    <i class="fas fa-sign-in-alt"></i> Login</a>
+            </span>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+    <div class="container">
+        <div class="row mt-5" >
+            <div class="col-md-9">
+                <div class="media">
+                    <img src="img/Programming/csharp.jpg" class="align-self-center mr-5" alt="...">
+                    <div class="media-body">
+                        <h5 class="">C# Quick Syntax Reference</h5>
+                        <p>This quick C# 7 guide is a condensed code and syntax reference to the C#
+                            programming language, updated with the latest features of C# 7.3 for .NET and Windows 10. It
+                            presents the essential C# 7 syntax in a well-organized format that can be used as a handy
+                            reference.</p>
+                        <p>In the C# 7 Quick Syntax Reference, you will find a concise reference to the C# language
+                            syntax:
+                            short,
+                            simple, and focused code examples; a well laid out table of contents; and a comprehensive
+                            index
+                            allowing
+                            easy review. You won’t find any technical jargon, bloated samples, drawn-out history
+                            lessons, or
+                            witty
+                            stories. What you will find is a language reference that is concise, to the point, and
+                            highly
+                            accessible. The book is packed with useful information and is a must-have for any C#
+                            programmer.</p>
+                        <h5 class="mt-5">What You Will Learn</h5>
+                        <p>
+                            <ul>
+                                <li>
+                                    <p>Discover what’s new in C# 7.3 and .NET for Windows 10 programming, including out
+                                        values,
+                                        ref
+                                        locals and returns, local functions, throw exceptions, and numeric literals</p>
+                                </li>
+                                <li>
+                                    <p>Create lightweight, unnamed types that contain multiple public fields </p>
+                                </li>
+                                <li>
+                                    <p>Create branching logic based on arbitrary types and values of the members of
+                                        those types
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Nest functions inside other functions to limit their scope and visibility </p>
+                                </li>
+                                <li>
+                                    <p>Throw expressions in code constructs that previously were not allowed</p>
+                                </li>
+                                <li>
+                                    <p>Declare methods with the async modifier to return other types in addition to Task
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Use the new numeric literals found in C# 7.3 to improve readability for numeric
+                                        constants
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" style="border:px solid black; ">
+                <form >
+                    <div class="form-group row">
+                        <label class="col-sm-8" for="bookPrice">Price: </label>
+                        <div class="col-sm-4">
+                            <label><i class="fas fa-dollar-sign"></i> 29.99</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-8" for="noOfBooks">Choose No of Books</label>
+                        <div class="col-sm-4">
+                            <select id="noOfBooks" class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <button  type="submit" class="col-sm-5 btn btn-primary">Add to Cart</button>
+                        <div class="col-sm-2"></div>
+                        <button type="submit" class="col-sm-5 btn btn-primary">Check Out</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- JS Files start -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="js/site.js"></script>
+    <!-- JS Files end -->
+</body>
+
+</html>
