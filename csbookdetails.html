@@ -61,7 +61,7 @@
             <div class="col-md-9">
                 <div class="media">
                     <img src="img/Programming/csharp.jpg" class="align-self-center mr-5" alt="...">
-                    <div class="media-body">
+                    <div class="media-body d-none d-sm-none d-md-block">
                         <h5 class="">C# Quick Syntax Reference</h5>
                         <p>This quick C# 7 guide is a condensed code and syntax reference to the C#
                             programming language, updated with the latest features of C# 7.3 for .NET and Windows 10. It
@@ -117,6 +117,7 @@
                     </div>
                 </div>
             </div>
+        </br d-sm-block d-md-none>
             <div class="col-md-3" style="border:px solid black; ">
                 <form >
                     <div class="form-group row">
@@ -137,12 +138,11 @@
                                 <option value="6">6</option>
                             </select>
                         </div>
-
                     </div>
                     <div class="form-group row">
-                        <button id="btnAddToCart" type="submit" class="col-sm-5 btn btn-primary">Add to Cart</button>
-                        <div class="col-sm-2"></div>
-                        <button id="#btnCheckOut" type="submit" class="col-sm-5 btn btn-primary">Check Out</button>
+                        <button id="btnAddToCart" type="submit" class="col-sm-5 btn btn-sm btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        <div class="col-sm-1"></div>
+                        <button id="#btnCheckOut" type="submit" class="col-sm-5 btn btn-sm btn-primary">Check Out</button>
                     </div>
                 </form>
             </div>

@@ -25,5 +25,9 @@ $(function () {
     $("#btnBack,#btnBack2").click(function(){
         location.href="http://localhost:3000/?cart=" + noOfBooks;
     });
+
+    $("#btnCheckout").click(function () {
+        location.href = "http://localhost:3000/checkout.html";
+    });
  
 });
