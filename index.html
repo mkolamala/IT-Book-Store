@@ -57,48 +57,9 @@
     </nav>
     <!-- navbar ends here -->
 
-    <!-- login Modal start -->
-    <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Login </h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginEmail">Email address</label>
-                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
-                                        placeholder="Enter email">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginPassword">Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
-                                        placeholder="Password">
-                                </div>
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label"> Remember me
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
-                                    data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container" id="mainContainer">
+        <!-- App loads here -->
     </div>
-    <!-- login Modal End -->
 
     <!-- Carusel start -->
     <div class="container mt-3" style="background-color:linen;">
@@ -107,7 +68,10 @@
                 <div class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="card" style="max-width: 18rem;">
-                            <img style="height:20rem" src="img/Programming/csharp.jpg" class="card-img-top" alt="Out of control">
+                            <a href="bookdetails.html">
+                            <img style="height:20rem" src="img/Programming/csharp.jpg" class="card-img-top"
+                                alt="C Sharp">
+                            </a>
                             <div class="card-body">
                                 <h5 class="card-title">C# 7</h5>
                                 <p class="card-text"></p>
@@ -117,16 +81,19 @@
                     </div>
                     <div class="item">
                         <div class="card" style="max-width: 18rem;">
-                            <img style="height:20rem" src="img/Programming/CMachineLearning.jpg" class="card-img-top" alt="The God Delusion">
+                            <img style="height:20rem" src="img/Programming/CMachineLearning.jpg" class="card-img-top"
+                                alt="The God Delusion">
                             <div class="card-body">
-                                <h5 class="card-title d-inline-block text-truncate" style="max-width: 175px;">C# Machine Learning</h5>
+                                <h5 class="card-title d-inline-block text-truncate" style="max-width: 175px;">C# Machine
+                                    Learning</h5>
                                 <a href="#" class="btn btn-primary">Add to Cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card" style="max-width: 18rem;">
-                            <img style="height:20rem;" src="img/Programming/CsharpProgramming.jpg" class="card-img-top" alt="The History of Love">
+                            <img style="height:20rem;" src="img/Programming/CsharpProgramming.jpg" class="card-img-top"
+                                alt="The History of Love">
                             <div class="card-body">
                                 <h5 class="card-title text-nowrap">The History of Love</h5>
                                 <p class="card-text"></p>
@@ -136,7 +103,8 @@
                     </div>
                     <div class="item">
                         <div class="card" style="max-width: 18rem;">
-                            <img style="height:20rem;" src="img/Programming/CDesignPatterns.jpg" class="card-img-top" alt="">
+                            <img style="height:20rem;" src="img/Programming/CDesignPatterns.jpg" class="card-img-top"
+                                alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Design Patterns</h5>
                                 <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -145,7 +113,8 @@
                     </div>
                     <div class="item">
                         <div class="card">
-                            <img style="height:20rem;" src="img/Programming/Java-in-a-Nutshell.jpg" class="card-img-top" alt="">
+                            <img style="height:20rem;" src="img/Programming/Java-in-a-Nutshell.jpg" class="card-img-top"
+                                alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Java</h5>
                                 <p class="card-text"></p>
@@ -235,51 +204,87 @@
         </div>
     </div>
     <!-- Carousel End -->
-<br>
-<br>
-    <!-- Carousel Start -->
-    <div class="card-deck">
-        <div class="card">
-            <img src="img/Out of control.jpg" class="card-img-top" alt="1">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/The God Delusion.jpg" class="card-img-top" alt="2">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/The History of Love.jpg" class="card-img-top" alt="3">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+
+    <br>
+    <br>
+    <!-- Carousel End -->
+
+
+    <!-- login Modal start -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login </h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button id="btnLogin" type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Carousel End -->
+    <!-- login Modal End -->
 
+    <!-- toast message start here -->
+    <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+        <div class="toast" style="position: absolute; top: 0; right: 0;">
+            <div class="toast-header">
+                <!-- <img src="..." class="rounded mr-2" alt="..."> -->
+                <strong class="mr-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
+    <!-- toast message End here -->
+
+    <!-- footer starts here -->
+    <footer id="fixed-bottom" class="fixed-bottom py-4 text-black" style="background-color: #e3f2fd;">
+        <div class="container text-center">
+            <small>Copyright &copy; IT Book Store</small>
+        </div>
+    </footer>
+    <!-- footer ends here -->
     <!-- JS Files start -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <!-- <script src="node_modules/popper.js/dist/popper.min.js"></script> -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="js/site.js"></script>
+
     <!-- JS Files end -->
 </body>
 
