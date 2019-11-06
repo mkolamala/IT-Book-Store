@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- css references start -->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/site.css">
+<!-- css references end -->
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+
+        <a class="navbar-brand" href="#">
+            <img src="index.html" width="30" height="30" class="d-inline-block align-top rounded-lg" alt="">
+            <i class="fas fa-book"></i> IT Book Store
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Browse
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Programming</a>
+                        <a class="dropdown-item" href="#">Database</a>
+                        <div class="dropdown-item">Cloud Technology</div>
+                        <a class="dropdown-item" href="#">Web Services</a>
+                        <a class="dropdown-item" href="#">Software Design</a>
+                    </div>
+                </li>
+
+            </ul>
+            <button type="button" class="btn  mr-sm-4">
+                <i class="fas fa-shopping-cart"></i> <span id="cartitems" class="badge badge-light">0</span>
+                <span class="sr-only">unread messages</span>
+            </button>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <span class="navbar-text ml-auto">
+                <a data-toggle="modal" data-target="#loginModal">
+                    <i class="fas fa-sign-in-alt"></i> Login</a>
+            </span>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-9">
+                <div class="media">
+                    <img src="img/Programming/CMachineLearning.jpg" class="align-self-center mr-5" alt="...">
+                    <div class="media-body">
+                        <h5 class="">C# Machine Learning Projects</h5>
+                        <p>
+                            Machine Learning is applied in almost all kinds of real-world surroundings and
+                            industries, right from medicine to advertising, finance and scientific research.
+                            This book help you learn how to choose a model for your problem, how to evaluate
+                            the performance of your models, and how you can use C# to build machine learning
+                            models for your future projects.
+                        </p>
+                        <p>You will get an overview of the machine learning systems and how C#, .Net users can apply
+                            your existing knowledge to the wide gamut of intelligent applications through a
+                            project-based approach. You will start by setting up your C# environment for machine
+                            learning with required packages, Accord.NET, LiveCharts, Deedle. We will then take you right
+                            from classification models for spam email filtering, NLP techniques for Twitter sentiment
+                            analysis, time-series data for forecasting foreign exchange rates to drawing insights from
+                            Customer segmentation in E-commerce. You will then build a recommendation model for Music
+                            Genre Recommendation, followed by, Munging data from image dataset for handwritten digit
+                            recognition. Lastly, you will learn to detect Anamoly in cyber attack & credit card fraud
+                            detection.</p>
+                        <h5 class="mt-5">What You Will Learn</h5>
+                        <p>
+                            <ul>
+                                <li>
+                                    <p>Set up C# environment for machine learning with required packages</p>
+                                </li>
+                                <li>
+                                    <p>Essential steps to build classification models for spam email filtering </p>
+                                </li>
+                                <li>
+                                    <p>Feature engineering using NLP techniques for Twitter sentiment analysis
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Forecast foreign exchange rates using continuous and time-series data </p>
+                                </li>
+                                <li>
+                                    <p>Building a recommendation model for Music Genre Recommendation</p>
+                                </li>
+                                <li>
+                                    <p>Data munging image dataset for handwritten digit recognition
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Choosing the right confidence threshold for cyber attack detection
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>One-Class Support Vector Machine for credit card fraud detection
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" style="border:px solid black; ">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-8" for="bookPrice">Price: </label>
+                        <div class="col-sm-4">
+                            <label><i class="fas fa-dollar-sign"></i> 29.99</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-8" for="noOfBooks">Choose No of Books</label>
+                        <div class="col-sm-4">
+                            <select id="noOfBooks" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <button id="btnAddToCart" type="submit" class="col-sm-5 btn btn-primary">Add to Cart</button>
+                        <div class="col-sm-2"></div>
+                        <button id="#btnCheckOut" type="submit" class="col-sm-5 btn btn-primary">Check Out</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- JS Files start -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/booklist2.js"></script>
+    <!-- JS Files end -->
+</body>
+
+</html>

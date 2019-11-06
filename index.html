@@ -12,6 +12,8 @@
 </head>
 
 <body>
+
+   
     <!-- navbar starts here -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
 
@@ -42,7 +44,7 @@
 
             </ul>
             <button type="button" class="btn  mr-sm-4">
-                <i class="fas fa-shopping-cart"></i> <span class="badge badge-light">9</span>
+                <i class="fas fa-shopping-cart"></i> <span id="cartitems" class="badge badge-light">0</span>
                 <span class="sr-only">unread messages</span>
             </button>
             <form class="form-inline my-2 my-lg-0">
@@ -56,10 +58,23 @@
         </div>
     </nav>
     <!-- navbar ends here -->
-
-    <div class="container" id="mainContainer">
-        <!-- App loads here -->
+  <!-- toast message start here -->
+  <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;display: none">
+        <div class="toast" data-delay="2000" style="position: absolute; top: 0; right: 0;" >
+            <div class="toast-header bg-info text-white">
+                <!-- <img src="..." class="rounded mr-2" alt="..."> -->
+                <strong class="mr-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
     </div>
+    <!-- toast message End here -->
 
     <!-- Carusel start -->
     <div class="container mt-3" style="background-color:linen;">
@@ -68,25 +83,25 @@
                 <div class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="card" style="max-width: 18rem;">
-                            <a href="bookdetails.html">
+                            <a href="csbookdetails.html">
                             <img style="height:20rem" src="img/Programming/csharp.jpg" class="card-img-top"
                                 alt="C Sharp">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title">C# 7</h5>
                                 <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                <a href="csbookdetails.html" class="btn btn-primary">Add to Cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card" style="max-width: 18rem;">
-                            <img style="height:20rem" src="img/Programming/CMachineLearning.jpg" class="card-img-top"
+                            <img href="mlbookdetails.html" style="height:20rem" src="img/Programming/CMachineLearning.jpg" class="card-img-top"
                                 alt="The God Delusion">
                             <div class="card-body">
                                 <h5 class="card-title d-inline-block text-truncate" style="max-width: 175px;">C# Machine
                                     Learning</h5>
-                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                <a href="mlbookdetails.html" class="btn btn-primary">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -253,23 +268,7 @@
     </div>
     <!-- login Modal End -->
 
-    <!-- toast message start here -->
-    <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
-        <div class="toast" style="position: absolute; top: 0; right: 0;">
-            <div class="toast-header">
-                <!-- <img src="..." class="rounded mr-2" alt="..."> -->
-                <strong class="mr-auto">Bootstrap</strong>
-                <small>11 mins ago</small>
-                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="toast-body">
-                Hello, world! This is a toast message.
-            </div>
-        </div>
-    </div>
-    <!-- toast message End here -->
+   
 
     <!-- footer starts here -->
     <footer id="fixed-bottom" class="fixed-bottom py-4 text-black" style="background-color: #e3f2fd;">
