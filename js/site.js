@@ -2,15 +2,17 @@ $(function () {
   $(function () {
     console.log('carousel');
     $('.owl-carousel').owlCarousel({
-      loop: true,
+      loop: false,
       margin: 10,
       nav: true,
       responsive: {
         0: {
-          items: 2
+          items: 2,
+          nav:false
         },
         600: {
-          items: 2
+          items: 2,
+          nav:false
         },
         1000: {
           items: 3
@@ -18,12 +20,8 @@ $(function () {
       }
     });
   });
-  // $('#mainContainer').append('bookslist.html');
-  // $.get('http://localhost:3000/bookslist.html', function (data, textStatus, jqXHR) {
-  //     $('#mainContainer').html(data);
-  // });
-  //$('#mainContainer').html('bookslist.html');
-  $('#btnLogin').click(function(e){
+
+  $('#btnLogin').click(function (e) {
     $('.toast').toast('show');
     $('#loginModal').modal('hide')
     e.preventDefault();
@@ -32,16 +30,13 @@ $(function () {
   //read the parameters from url 
   var params = {};
 
-  if (location.search) {
-      var parts = location.search.substring(1).split('&');
-      for (var i = 0; i < parts.length; i++) {
-          var nv = parts[i].split('=');
-          if (!nv[0]) continue;
-          params[nv[0]] = nv[1] || true;
-      }
+  retrieveUrlSearchParameters(params);
 
-      var noOfBooks = parseInt(params.cart);
-      $("#cartitems").text(noOfBooks);
+  var cart = parseInt(params.cart);
+  if (isNaN(cart)) {
+    cart = 0;
   }
- 
+  $("#cartitems").text(cart);
+
+
 });

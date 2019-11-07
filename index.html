@@ -2,6 +2,8 @@
 <html lang="en">
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="img/favicon.ico" />
 <!-- css references start -->
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
@@ -13,13 +15,13 @@
 
 <body>
 
-   
+
     <!-- navbar starts here -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
 
-        <a class="navbar-brand" href="#">
-            <img src="index.html" width="30" height="30" class="d-inline-block align-top" alt="">
-            <i class="fas fa-book"></i> IT Book Store
+        <a class="navbar-brand" href="http://localhost:3000/">
+            <img src="img/android-chrome-512x512.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            IT Book Store
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,9 +60,9 @@
         </div>
     </nav>
     <!-- navbar ends here -->
-  <!-- toast message start here -->
-  <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;display: none">
-        <div class="toast" data-delay="2000" style="position: absolute; top: 0; right: 0;" >
+    <!-- toast message start here -->
+    <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;display: none">
+        <div class="toast" data-delay="2000" style="position: absolute; top: 0; right: 0;">
             <div class="toast-header bg-info text-white">
                 <!-- <img src="..." class="rounded mr-2" alt="..."> -->
                 <strong class="mr-auto">Bootstrap</strong>
@@ -84,8 +86,8 @@
                     <div class="item">
                         <div class="card" style="max-width: 18rem;">
                             <a href="csbookdetails.html">
-                            <img style="height:20rem" src="img/Programming/csharp.jpg" class="card-img-top"
-                                alt="C Sharp">
+                                <img style="height:20rem" src="img/Programming/csharp.jpg" class="card-img-top"
+                                    alt="C Sharp">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title">C# 7</h5>
@@ -96,8 +98,10 @@
                     </div>
                     <div class="item">
                         <div class="card" style="max-width: 18rem;">
-                            <img href="mlbookdetails.html" style="height:20rem" src="img/Programming/CMachineLearning.jpg" class="card-img-top"
-                                alt="The God Delusion">
+                            <a href="mlbookdetails.html">
+                                <img style="height:20rem" src="img/Programming/CMachineLearning.jpg"
+                                    class="card-img-top" alt="C# machine Learning">
+                            </a>
                             <div class="card-body">
                                 <h5 class="card-title d-inline-block text-truncate" style="max-width: 175px;">C# Machine
                                     Learning</h5>
@@ -108,9 +112,9 @@
                     <div class="item">
                         <div class="card" style="max-width: 18rem;">
                             <img style="height:20rem;" src="img/Programming/CsharpProgramming.jpg" class="card-img-top"
-                                alt="The History of Love">
+                                alt="C# Programming">
                             <div class="card-body">
-                                <h5 class="card-title text-nowrap">The History of Love</h5>
+                                <h5 class="card-title text-nowrap">C# programming</h5>
                                 <p class="card-text"></p>
                                 <a href="#" class="btn btn-primary">More Info</a>
                             </div>
@@ -138,16 +142,16 @@
                         </div>
                     </div>
                     <div class="item">
-                            <div class="card">
-                                <img style="height:20rem;" src="img/Programming/Python-Data-Analytics.jpg" class="card-img-top"
-                                    alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Java</h5>
-                                    <p class="card-text"></p>
-                                    <a href="#" class="btn btn-primary">More Info</a>
-                                </div>
+                        <div class="card">
+                            <img style="height:20rem;" src="img/Programming/Python-Data-Analytics.jpg"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Python Analytics</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">More Info</a>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -202,7 +206,7 @@
     </div>
     <!-- login Modal End -->
 
-   
+
 
     <!-- footer starts here -->
     <footer id="fixed-bottom" class="fixed-bottom py-4 text-black" style="background-color: #e3f2fd;">
@@ -216,6 +220,7 @@
     <!-- <script src="node_modules/popper.js/dist/popper.min.js"></script> -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="js/utility.js"></script>
     <script src="js/site.js"></script>
 
     <!-- JS Files end -->

@@ -2,6 +2,8 @@
 <html lang="en">
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="img/favicon.ico" />
 <!-- css references start -->
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
@@ -15,9 +17,10 @@
     <!-- navbar starts here -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
 
-        <a class="navbar-brand" href="#">
-            <img src="index.html" width="30" height="30" class="d-inline-block align-top rounded-lg" alt="">
-            <i class="fas fa-book"></i> IT Book Store
+        <a class="navbar-brand" href="http://localhost:3000/">
+            <img src="img/android-chrome-512x512.png" width="30" height="30" class="d-inline-block align-top rounded-lg"
+                alt="">
+            IT Book Store
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,12 +59,13 @@
         </div>
     </nav>
     <!-- navbar ends here -->
-    <div class="container">
-        <div class="row mt-5" >
-            <div class="col-md-9">
+    <div class="container-fluid">
+        <!-- For Medium and above -->
+        <div class="row mt-5 media-body d-none d-sm-none d-md-block">
+            <div class="col-md-8">
                 <div class="media">
                     <img src="img/Programming/csharp.jpg" class="align-self-center mr-5" alt="...">
-                    <div class="media-body d-none d-sm-none d-md-block">
+                    <div class="media-body">
                         <h5 class="">C# Quick Syntax Reference</h5>
                         <p>This quick C# 7 guide is a condensed code and syntax reference to the C#
                             programming language, updated with the latest features of C# 7.3 for .NET and Windows 10. It
@@ -115,20 +119,20 @@
                             </ul>
                         </p>
                     </div>
+
                 </div>
             </div>
-        </br d-sm-block d-md-none>
             <div class="col-md-3" style="border:px solid black; ">
-                <form >
+                <form>
                     <div class="form-group row">
-                        <label class="col-sm-8" for="bookPrice">Price: </label>
-                        <div class="col-sm-4">
+                        <label class="col-md-8" for="bookPrice">Price: </label>
+                        <div class="col-md-4">
                             <label><i class="fas fa-dollar-sign"></i> 29.99</label>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-8" for="noOfBooks">Choose No of Books</label>
-                        <div class="col-sm-4">
+                        <label class="col-md-8" for="noOfBooks">Choose No of Books</label>
+                        <div class="col-md-4">
                             <select id="noOfBooks" class="form-control">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -140,11 +144,91 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <button id="btnAddToCart" type="submit" class="col-sm-5 btn btn-sm btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        <div class="col-sm-1"></div>
-                        <button id="#btnCheckOut" type="submit" class="col-sm-5 btn btn-sm btn-primary">Check Out</button>
+                        <button id="btnAddToCart" type="submit" class="col-md-5 btn btn-sm btn-primary"><i
+                                class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        <div class="col-md-1"></div>
+                        <button id="#btnCheckOut" type="submit" class="col-md-5 btn btn-sm btn-primary">Check
+                            Out</button>
                     </div>
                 </form>
+            </div>
+        </div>
+        <!-- For Samll and below -->
+        <div class="container-fluid mt-3 d-block d-none d-sm-block d-md-none">
+            <div class="row">
+                <div class="media offset-4">
+                    <img src="img/Programming/csharp.jpg"
+                        class="align-self-center mr-5" style="height:10rem"
+                        alt="...">
+
+                    <div class="media-body">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    <ul>
+                        <li>
+                            <p>Discover what’s new in C# 7.3 and .NET for Windows 10 programming, including out
+                                values,
+                                ref
+                                locals and returns, local functions, throw exceptions, and numeric literals</p>
+                        </li>
+                        <li>
+                            <p>Create lightweight, unnamed types that contain multiple public fields </p>
+                        </li>
+                        <li>
+                            <p>Create branching logic based on arbitrary types and values of the members of
+                                those types
+                            </p>
+                        </li>
+                        <li>
+                            <p>Nest functions inside other functions to limit their scope and visibility </p>
+                        </li>
+                        <li>
+                            <p>Throw expressions in code constructs that previously were not allowed</p>
+                        </li>
+                        <li>
+                            <p>Declare methods with the async modifier to return other types in addition to Task
+                            </p>
+                        </li>
+                        <li>
+                            <p>Use the new numeric literals found in C# 7.3 to improve readability for numeric
+                                constants
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="container row">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-7" for="bookPrice">Price: </label>
+                        <div class="col">
+                            <i class="fas fa-dollar-sign"></i> 29.99
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-7" for="noOfBooks">Choose No of Books</label>
+                        <div class="col">
+                            <select id="noOfBooks" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <button id="btnAddToCart" type="submit" class=" col-6 offset-1 btn btn-sm btn-primary"><i
+                                class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        <div class="col-1"></div>
+                        <button id="#btnCheckOut" type="submit" class=" col btn btn-sm btn-primary">Check Out</button>
+                    </div>
+                </form>
+
             </div>
         </div>
 
