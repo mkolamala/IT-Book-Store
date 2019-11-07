@@ -1,5 +1,5 @@
 $(function(){
-   $('#btnAddToCart').click(function(e){
+   $('#btnAddToCart,#btnAddToCartSM').click(function(e){
     var noOfBooks = $( "#noOfBooks").val();
     var price = 13.33;
     console.log('abc');
