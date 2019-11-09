@@ -1,10 +1,17 @@
-$(function(){
-   $('#btnAddToCart,#btnAddToCartSM').click(function(e){
-    var noOfBooks = $( "#noOfBooks").val();
-    var price = 13.33;
-    console.log('abc');
-    var url = "shoppingcart1.html?noofbooks=" + noOfBooks + "&price=" + price;
-    window.location.href = url;
-    e.preventDefault();
+$(function () {
+   $('#btnAddToCart,#btnAddToCartSM').click(function (e) {
+      $('#book1').val($("#noOfBooks").val());
+      $('#book1price').val($("#bookprice").text());
+      console.log('no of books selected - ' + $("#noOfBooks").val());
+      console.log('book price - ' + $("#bookprice").text());
+      var url = "shoppingcart1.html";
+      //window.location.href = url;
+      console.log('man container - ' + $('#maincontainer').length);
+
+      updateCartItems();
+      $('#maincontainer').load(url);
+      e.preventDefault();
    });
+
+
 });

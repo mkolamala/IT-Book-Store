@@ -1,127 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" href="img/favicon.ico" />
-<!-- css references start -->
-<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/site.css">
-<!-- css references end -->
-</head>
-
-<body>
-    <!-- navbar starts here -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
-
-        <a class="navbar-brand" href="http://localhost:3000/">
-            <img src="img/android-chrome-512x512.png"  width="30" height="30" class="d-inline-block align-top" alt="">
-             IT Book Store
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Browse
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Programming</a>
-                        <a class="dropdown-item" href="#">Database</a>
-                        <div class="dropdown-item">Cloud Technology</div>
-                        <a class="dropdown-item" href="#">Web Services</a>
-                        <a class="dropdown-item" href="#">Software Design</a>
-                    </div>
-                </li>
-
-            </ul>
-            <button type="button" class="btn  mr-sm-4">
-                <i class="fas fa-shopping-cart"></i> <span id="cartitems" class="badge badge-light">0</span>
-                <span class="sr-only">unread messages</span>
-            </button>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <span class="navbar-text ml-auto">
-                <a data-toggle="modal" data-target="#loginModal">
-                    <i class="fas fa-sign-in-alt"></i> Login</a>
-            </span>
+<div id="btnBack" class="btn btn-primary ml-3 mt-3">Back to shopping</div>
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-sm-2 offset-sm-10">
+            Price
         </div>
-    </nav>
-    <!-- navbar ends here -->
-    <div id="btnBack" class="btn btn-primary ml-3 mt-3">Back to shopping</div>
+
+    </div>
+    <hr>
     <div class="container">
-        <div class="row mt-2">
-            <div class="col-sm-2 offset-sm-10">
-                Price
-            </div>
-
-        </div>
-        <hr>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-sm-10 col-xs-10">
-                    <div class="media mt-5">
-                        <img src="img/Programming/csharp.jpg" style="width:10rem;height:10rem"
-                            class="align-self-center mr-5 img-fluid rounded-lg" alt="...">
-                        <div class="media-body">
-                            <h5 class="mt-0">C# Quick Syntax Reference</h5>
-
-                        </div>
+        <div class="row">
+            <div class="col-md-10 col-sm-10 col-xs-10">
+                <div class="media mt-5">
+                    <img src="img/Programming/csharp.jpg" style="width:10rem;height:10rem"
+                        class="align-self-center mr-5 img-fluid rounded-lg" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">C# Quick Syntax Reference</h5>
+                        <span id="noofbooks1selected"></span>
                     </div>
                 </div>
-                <div class="col mt-2"><i class="fas fa-dollar-sign"></i> <span id="bookprice">29.99</span></div>
             </div>
-        </div>
-        <hr>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-sm-10 col-xs-10">
-                    <div class="media mt-5">
-                        <img src="img/Programming/CMachineLearning.jpg" style="width:10rem;height:10rem"
-                            class="align-self-center mr-5 img-fluid rounded-lg" alt="...">
-                        <div class="media-body ">
-                            <h5 class="mt-0">C# Machine Learning Projects</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mt-2 "><i class="fas fa-dollar-sign"></i> 19.99</div>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-sm-4 col-md-2 offset-6">
-                Total Price: <i class="fas fa-dollar-sign"></i> 49.98
-            </div>
-        </div>
-        </br>
-        </br>
-        <div class="row">
-            <div class="col-md-3 offset-6">
-                <button id="btnCheckout" class="btn btn-primary">Check Out</button>
-            </div>
+            <div class="col mt-2"><i class="fas fa-dollar-sign"></i> <span id="bookprice">29.99</span></div>
         </div>
     </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-sm-10 col-xs-10">
+                <div class="media mt-5">
+                    <img src="img/Programming/CMachineLearning.jpg" style="width:10rem;height:10rem"
+                        class="align-self-center mr-5 img-fluid rounded-lg" alt="...">
+                    <div class="media-body ">
+                        <h5 class="mt-0">C# Machine Learning Projects</h5>
+                        <span id="noofbooks2selected"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-2 "><i class="fas fa-dollar-sign"></i> 29.99</div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-4 col-md-2 offset-9">
+            Total Price: <i class="fas fa-dollar-sign"></i> <span id="totalprice"></span>
+        </div>
+    </div>
+    </br>
+    </br>
+    <div class="row">
+        <div class="col-md-3 offset-6">
+            <button id="btnCheckout" class="btn btn-primary">Check Out</button>
+        </div>
+    </div>
+</div>
 </br>
-    <div id="btnBack2" class="btn btn-primary ml-3 mb-3">Back to shopping</div>
-    <!-- JS Files start -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="js/utility.js"></script>
-    <script src="js/site.js"></script>
-    <script src="js/shoppingcart2.js"></script>
-    <!-- JS Files end -->
-</body>
+<div id="btnBack2" class="btn btn-primary ml-3 mb-3">Back to shopping</div>
 
-</html>
+<script src="js/shoppingcart2.js"></script>

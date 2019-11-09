@@ -1,204 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" href="img/favicon.ico" />
-<!-- css references start -->
-<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/site.css">
-<!-- css references end -->
-</head>
-
-<body>
-    <!-- navbar starts here -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
-
-        <a class="navbar-brand" href="http://localhost:3000/">
-            <img src="img/android-chrome-512x512.png" width="30" height="30" class="d-inline-block align-top" alt="">
-             IT Book Store
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Browse
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Programming</a>
-                        <a class="dropdown-item" href="#">Database</a>
-                        <div class="dropdown-item">Cloud Technology</div>
-                        <a class="dropdown-item" href="#">Web Services</a>
-                        <a class="dropdown-item" href="#">Software Design</a>
-                    </div>
-                </li>
-
-            </ul>
-            <button type="button" class="btn  mr-sm-4">
-                <i class="fas fa-shopping-cart"></i> <span class="badge badge-light">9</span>
-                <span class="sr-only">unread messages</span>
-            </button>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <span class="navbar-text ml-auto">
-                <a data-toggle="modal" data-target="#loginModal">
-                    <i class="fas fa-sign-in-alt"></i> Login</a>
-            </span>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="row mt-3">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-header">
-                        Shipping Address
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <input type="checkbox" value="" id="defaultCheck1">
-                            <label for="defaultCheck1">
-                                Is Billing Address Same as Shipping
-                            </label>
-                        </h5>
-                        <form>
-                            <div class="form-group">
-                                <label for="inputAddress">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputAddress2">Address 2</label>
-                                <input type="text" class="form-control" id="inputAddress2"
-                                    placeholder="Apartment, studio, or floor">
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputCity">City</label>
-                                    <input type="text" class="form-control" id="inputCity">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputState">State</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Choose...</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="inputZip">Zip</label>
-                                    <input type="text" class="form-control" id="inputZip">
-                                </div>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Save</button>
-                        </form>
-                    </div>
+<input type="hidden" id="hdnshippingCharges" name="hdnshippingCharges" value="4.99">
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                    Shipping Address
                 </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <input type="checkbox" value="" id="defaultCheck1">
+                        <label for="defaultCheck1">
+                            Is Billing Address Same as Shipping
+                        </label>
+                    </h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
 
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-header">
-                        Billing Address
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Address</h5>
-                        <form>
-                            <div class="form-group">
-                                <label for="inputAddress">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputAddress2">Address 2</label>
-                                <input type="text" class="form-control" id="inputAddress2"
-                                    placeholder="Apartment, studio, or floor">
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputCity">City</label>
-                                    <input type="text" class="form-control" id="inputCity">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputState">State</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Choose...</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="inputZip">Zip</label>
-                                    <input type="text" class="form-control" id="inputZip">
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Save</button>
-                        </form>
-                    </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </form>
                 </div>
-
             </div>
+
         </div>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-sm-6 offset-sm-4">
-                <div class="card">
-                    <div class="card-header text-center">
-                        Order Summary
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                    Billing Address
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Address</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-4">
+            <div class="card">
+                <div class="card-header text-center">
+                    Order Summary
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            Items(<span id="spntotalItems"></span>):
+                        </div>
+                        <div class="col-sm-3 offset-sm-3">
+                            <i class="fas fa-dollar-sign"></i> <span id="spnOrderTotal"></span>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                Items(2):
-                            </div>
-                            <div class="col-sm-3 offset-sm-3">
-                                <i class="fas fa-dollar-sign"></i> 49.98
-                            </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            Shipping Charges:
                         </div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                Shipping Charges:
-                            </div>
-                            <div class="col-sm-3 offset-sm-3">
-                                <i class="fas fa-dollar-sign"></i> 4.99
-                            </div>
+                        <div class="col-sm-3 offset-sm-3">
+                            <i class="fas fa-dollar-sign"></i> 4.99
                         </div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                Total Charges:
-                            </div>
-                            <div class="col-sm-3 offset-sm-3">
-                                <i class="fas fa-dollar-sign"></i> 54.97
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            Total Charges:
                         </div>
-                        <div class="row">
-                            <div class="col-sm-6 offset-sm-3">
-                                <a href="orderconfirmation.html" class="btn btn-primary">Place Your Order</a>
-                            </div>
+                        <div class="col-sm-3 offset-sm-3">
+                            <i class="fas fa-dollar-sign"></i> <span id="spnTotalPrice"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 offset-sm-3">
+                            <a id="orderconfirm" href="#" class="btn btn-primary">Place Your Order</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- navbar ends here -->
-    <!-- JS Files start -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="js/orderconfirm.js"></script>
-    <!-- JS Files end -->
-</body>
-
-</html>
+</div>
+<script src="js/checkout.js"></script>
