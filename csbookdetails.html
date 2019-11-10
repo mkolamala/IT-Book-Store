@@ -1,10 +1,10 @@
-   
-    <div class="container-fluid">
-        <!-- For Medium and above -->
-        <div class="row mt-5 media-body d-none d-sm-none d-md-block">
+<div class="container-fluid">
+    <!-- For Medium and above -->
+    <div class="d-none d-sm-none d-md-block ">
+        <div class="row mt-5 media-body">
             <div class="col-md-8">
                 <div class="media">
-                    <img src="img/Programming/csharp.jpg" class="align-self-center mr-5" alt="...">
+                    <img src="img/Programming/csharp.jpg" class="align-self-center mr-5" alt="C Sharp Programming">
                     <div class="media-body">
                         <h5 class="">C# Quick Syntax Reference</h5>
                         <p>This quick C# 7 guide is a condensed code and syntax reference to the C#
@@ -93,86 +93,87 @@
                 </form>
             </div>
         </div>
-        <!-- For Samll and below -->
-        <div class="container-fluid mt-3 d-block d-none d-sm-block d-md-none">
-            <div class="row">
-                <div class="media offset-4">
-                    <img src="img/Programming/csharp.jpg"
-                        class="align-self-center mr-5" style="height:10rem"
-                        alt="...">
-
-                    <div class="media-body">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <p>
-                    <ul>
-                        <li>
-                            <p>Discover what’s new in C# 7.3 and .NET for Windows 10 programming, including out
-                                values,
-                                ref
-                                locals and returns, local functions, throw exceptions, and numeric literals</p>
-                        </li>
-                        <li>
-                            <p>Create lightweight, unnamed types that contain multiple public fields </p>
-                        </li>
-                        <li>
-                            <p>Create branching logic based on arbitrary types and values of the members of
-                                those types
-                            </p>
-                        </li>
-                        <li>
-                            <p>Nest functions inside other functions to limit their scope and visibility </p>
-                        </li>
-                        <li>
-                            <p>Throw expressions in code constructs that previously were not allowed</p>
-                        </li>
-                        <li>
-                            <p>Declare methods with the async modifier to return other types in addition to Task
-                            </p>
-                        </li>
-                        <li>
-                            <p>Use the new numeric literals found in C# 7.3 to improve readability for numeric
-                                constants
-                            </p>
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div class="container row">
-                <form>
-                    <div class="form-group row">
-                        <label class="col-7" for="bookPrice">Price: </label>
-                        <div class="col">
-                            <i class="fas fa-dollar-sign"></i> 29.99
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-7" for="noOfBooks">Choose No of Books</label>
-                        <div class="col">
-                            <select id="noOfBooks" class="form-control">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <button id="btnAddToCartSM" type="submit" class=" col-6 offset-1 btn btn-sm btn-primary"><i
-                                class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        <div class="col-1"></div>
-                        <button id="#btnCheckOutSM" type="submit" class=" col btn btn-sm btn-primary">Check Out</button>
-                    </div>
-                </form>
-
-            </div>
-        </div>
-
     </div>
 
-    <script src="js/booklist.js"></script>
-    <!-- JS Files end -->
+    <!-- For Samll and below -->
+    <div class="d-block mt-3 d-none d-sm-block d-md-none">
+        <div class="row">
+            <div class="media offset-4">
+                <img src="img/Programming/csharp.jpg" class="align-self-center mr-5" style="height:10rem" alt="...">
+
+                <div class="media-body">
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                <ul>
+                    <li>
+                        <p>Discover what’s new in C# 7.3 and .NET for Windows 10 programming, including out
+                            values,
+                            ref
+                            locals and returns, local functions, throw exceptions, and numeric literals</p>
+                    </li>
+                    <li>
+                        <p>Create lightweight, unnamed types that contain multiple public fields </p>
+                    </li>
+                    <li>
+                        <p>Create branching logic based on arbitrary types and values of the members of
+                            those types
+                        </p>
+                    </li>
+                    <li>
+                        <p>Nest functions inside other functions to limit their scope and visibility </p>
+                    </li>
+                    <li>
+                        <p>Throw expressions in code constructs that previously were not allowed</p>
+                    </li>
+                    <li>
+                        <p>Declare methods with the async modifier to return other types in addition to Task
+                        </p>
+                    </li>
+
+                </ul>
+            </p>
+        </div>
+
+        <form >
+            <div class="form-group row">
+                <label for="bookPrice" class="col-6 col-sm-4 col-form-label">Price</label>
+                <div class="col-6 col-sm-8">
+                    <span id="bookPrice"> <i class="fas fa-dollar-sign"></i> 29.99</span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-6 col-sm-4 col-form-label" for="noOfBooks">Choose No of Books</label>
+                <div class="col-6 col-sm-8">
+                    <select id="noOfBooks" name="noOfBooks" class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <button id="btnAddToCartSM" type="submit" class=" btn btn-md btn-primary float-left"><i
+                            class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    <button id="#btnCheckOutSM" type="submit" class="btn btn-md btn-primary float-right ">Check
+                        Out</button>
+                </div>
+                <br>
+<br>
+<br>
+<br>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<script src="js/booklist.js"></script>
+<!-- JS Files end -->

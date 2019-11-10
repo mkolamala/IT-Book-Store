@@ -1,18 +1,4 @@
 $(function () {
-   //read the parameters from url 
-    // var params = {};
-
-    // retrieveUrlSearchParameters(params);
-
-    // // Assign the values to HTML elements
-    // var noOfBooks = parseInt(params.noofbooks);
-    // var price = params.price;
-    // var cart = parseInt($("#cartitems").text());
-    // if(isNaN(cart)){
-    //     cart = 0;
-    // }
-    // $("#cartitems").text(cart+noOfBooks);
-    // $("#bookprice").text(noOfBooks*price);
     $('#noofbooks1selected').text('No of Books Selected - ' + $('#book1').val());
     $('#noofbooks2selected').text('No of Books Selected - ' + $('#book2').val());
     var totalPrice = 0;
